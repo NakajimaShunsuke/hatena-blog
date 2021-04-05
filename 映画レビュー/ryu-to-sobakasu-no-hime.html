@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>竜とそばかすの姫</title>
 </head>
+
 <body>
   <div class="entry-content">
 
@@ -20,8 +23,58 @@
       <p class="movie-phrase">あなたは、誰<br>？</p>
 
     </div>
+    <div style="text-align: center;">
+      <p style="margin: 0; padding: 0;font-size: 1.5vw;">『時をかける少女』『サマーウォーズ』『おおかみこどもの雨と雪』</p>
+      <p style="margin-top: 0; padding-top: 0;font-size: 3vw; font-weight: bold;">細田守が辿り着いた、渾身の最新作</p>
+    </div>
+    <div class="movies">
+      <div class="panel" style="text-align: center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hM8T-6OvWpo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="panel" style="text-align: center; display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R1eM80jqTeM" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="panel" style="text-align: center; display: none">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nBgL2Ei7Nv0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="movies-select">
+        <div class="btn active">
+          <p>予告１</p>
+        </div>
+        <div class="btn">
+          <p>特報</p>
+        </div>
+        <div class="btn">
+          <p>特報２</p>
+        </div>
+
+      </div>
+      <a class="official-anchor" href="">
+        <p>公式でストーリーを確認</p>
+      </a>
+      <div class="content" style="margin-top: 30px;">
+        <h4>物語の解釈</h4>
+        <p>メモ：</p>
+        <p>現実の自分　現実の世界</p>
+        <p>もう１つの自分　もう１つ世界</p>
+        <p>2つを結ぶのが「うた」</p>
+        <p>あなたは、誰？　”あなた”とは誰を示しているかによって解釈が変わるフレーズ</p>
+      </div>
+
+
+    </div>
     <p class="copyright">著作権：©2021 スタジオ地図</p>
   </div>
+
 </body>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
@@ -30,18 +83,20 @@
   #wrapper {
     background-color: #FFF;
   }
-  .entry-content h4 {
+
+  .entry-content h4,
+  p {
     color: #00a897;
   }
 
-  .entry-content{
+  .entry-content {
     width: 730px;
     margin: 0 auto;
   }
 
   .entry-content .copyright {
     text-align: center;
-    color: 	#515254;
+    color: #515254;
   }
 
   .mv-character {
@@ -65,10 +120,10 @@
     left: 10%;
     top: 10%;
     font-family: 'Noto Sans JP', sans-serif;
-    text-shadow:1px 1px 0 #00a897, -1px -1px 0 #00a897,
-              -1px 1px 0 #00a897, 1px -1px 0 #00a897,
-              0px 1px 0 #00a897,  0 -1px 0 #00a897,
-              -1px 0 0 #00a897, 1px 0 0 #00a897;
+    text-shadow: 1px 1px 0 #00a897, -1px -1px 0 #00a897,
+      -1px 1px 0 #00a897, 1px -1px 0 #00a897,
+      0px 1px 0 #00a897, 0 -1px 0 #00a897,
+      -1px 0 0 #00a897, 1px 0 0 #00a897;
   }
 
   .entry-content .movie-roadshow {
@@ -79,10 +134,10 @@
     left: 22%;
     top: 40%;
     font-family: 'Noto Sans JP', sans-serif;
-    text-shadow:1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
-              -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
-              0px 1px 0 #ECE038,  0 -1px 0 #ECE038,
-              -1px 0 0 #ECE038, 1px 0 0 #ECE038;
+    text-shadow: 1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
+      -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
+      0px 1px 0 #ECE038, 0 -1px 0 #ECE038,
+      -1px 0 0 #ECE038, 1px 0 0 #ECE038;
   }
 
   .entry-content .movie-phrase {
@@ -94,23 +149,83 @@
     right: 5%;
     top: 5%;
     font-family: 'Noto Sans JP', sans-serif;
-    text-shadow:1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
-              -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
-              0px 1px 0 #ECE038,  0 -1px 0 #ECE038,
-              -1px 0 0 #ECE038, 1px 0 0 #ECE038;
+    text-shadow: 1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
+      -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
+      0px 1px 0 #ECE038, 0 -1px 0 #ECE038,
+      -1px 0 0 #ECE038, 1px 0 0 #ECE038;
   }
 
+  .movies-select {
+    display: flex;
+    justify-content: center;
+  }
 
+  .movies-select div {
+    cursor: pointer;
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: #00a897 1px solid;
+    width: 100px;
+  }
+
+  .movies-select p {
+    margin: 0;
+  }
+
+  .active {
+    background: #00a897;
+  }
+
+  .active p {
+    color: #FFF;
+  }
+
+  .official-anchor {
+    margin: 20px auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 70%;
+    height: 40px;
+    background: #00a897;
+  }
+
+  .official-anchor p {
+    text-align: center;
+    color: #FFF;
+  }
+
+  .official-anchor:hover {
+    opacity: 0.7;
+    color: white;
+  }
+
+  .content h4 {
+    padding: 0.8rem 1.5rem;
+    border-left: 6px double #00a897;
+  }
 </style>
 <script>
   $(function () {
-    //切り替え動作
-    $('button').on('click', () => {
-        $('.english').toggle('slow');
-        $('.japanese').toggle('slow');
-    });
+
     $('.mv-character,.movie-title,.movie-roadshow').hide().fadeIn(1500);
     $('.movie-phrase').hide().fadeIn(2500);
+
+    $('.btn').click(function () {
+      $('.btn').removeClass('active');
+      $(this).addClass('active');
+
+      $('.panel').hide().fadeToggle;
+      $('.panel').eq($(this).index()).fadeIn();
+    });
   });
 </script>
+
 </html>
