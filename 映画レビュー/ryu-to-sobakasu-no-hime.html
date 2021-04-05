@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>竜とそばかすの姫</title>
+</head>
+<body>
+  <div class="entry-content">
+
+    <div class="mainvisual">
+      <div>
+        <img src="./images/mv__teaser_pc.jpg" width="100%" alt="" style="position: relative; z-index: 1;">
+      </div>
+      <img class="mv-character" src="./images/mv-character.png" alt="">
+      <h4 class="movie-title">竜とそばかすの姫</h4>
+      <p class="movie-roadshow">2021 ROADSHOW</p>
+      <p class="movie-phrase">あなたは、誰<br>？</p>
+
+    </div>
+    <p class="copyright">著作権：©2021 スタジオ地図</p>
+  </div>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
+</style>
+<style>
+  #wrapper {
+    background-color: #FFF;
+  }
+  .entry-content h4 {
+    color: #00a897;
+  }
+
+  .entry-content{
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  .entry-content .copyright {
+    text-align: center;
+    color: 	#515254;
+  }
+
+  .mv-character {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+    width: 335px;
+  }
+
+  .mainvisual {
+    position: relative;
+    width: 100%;
+  }
+
+  .entry-content .movie-title {
+    color: #FFF;
+    font-size: 40px;
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    top: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow:1px 1px 0 #00a897, -1px -1px 0 #00a897,
+              -1px 1px 0 #00a897, 1px -1px 0 #00a897,
+              0px 1px 0 #00a897,  0 -1px 0 #00a897,
+              -1px 0 0 #00a897, 1px 0 0 #00a897;
+  }
+
+  .entry-content .movie-roadshow {
+    color: #00a897;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    left: 22%;
+    top: 40%;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow:1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
+              -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
+              0px 1px 0 #ECE038,  0 -1px 0 #ECE038,
+              -1px 0 0 #ECE038, 1px 0 0 #ECE038;
+  }
+
+  .entry-content .movie-phrase {
+    width: 30px;
+    color: #00a897;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow:1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
+              -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
+              0px 1px 0 #ECE038,  0 -1px 0 #ECE038,
+              -1px 0 0 #ECE038, 1px 0 0 #ECE038;
+  }
+
+
+</style>
+<script>
+  $(function () {
+    //切り替え動作
+    $('button').on('click', () => {
+        $('.english').toggle('slow');
+        $('.japanese').toggle('slow');
+    });
+    $('.mv-character,.movie-title,.movie-roadshow').hide().fadeIn(1500);
+    $('.movie-phrase').hide().fadeIn(2500);
+  });
+</script>
+</html>
