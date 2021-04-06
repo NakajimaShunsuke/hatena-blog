@@ -58,29 +58,32 @@
         </div>
 
       </div>
-      <a class="official-anchor" href="https://ryu-to-sobakasu-no-hime.jp/">
-        <p>公式でストーリーを確認</p>
-      </a>
+      <div>
+        <a class="official-anchor" href="https://ryu-to-sobakasu-no-hime.jp/">
+          <p>公式でストーリーを確認</p>
+        </a>
+      </div>
+
       <div class="content" style="margin-top: 30px;">
         <h4>物語の解釈</h4>
-        <p><span>現実の自分　現実の世界</span> </p>
-        <p><span>もう１つの自分　もう１つの世界</span></p>
+        <p class="movie-span"><span>現実の自分　現実の世界</span> </p>
+        <p class="movie-span"><span>もう１つの自分　もう１つの世界</span></p>
         <p>2つの自分と世界を結ぶのが <span>「うた」</span></p>
         <p>公開されている情報の中でも特に強調されている</p>
-        <p><span>あなたは、誰？</span></p>
+        <p class="movie-span"><span>あなたは、誰？</span></p>
         <p>”あなた”とは誰をしてしているのか、解釈の仕方によって意味が変わってくるモノだと思います。</p>
         <p>また”あなた”はある特定の人物をしてしているわけではなく、場面によってそこに入る人物が変化する可能性があります。</p>
         <h4>”あなた”が女子高生・すず(ベル)</h4>
         <p>2021/04/06時点で情報の開示が多い女子高生・すず(ベル)を”あなた”とした場合の解釈</p>
         <p>ベルが竜に対して『あなたは、誰？』と問いかける事が一番自然かもしれません。</p>
         <p>ですが、『あなたは、誰？』と</p>
-        <p><span>女子高生・すず　が　ベル　に</span></p>
-        <p><span>ベル　が　女子高生・すず　に</span> </p>
-        <p><span>『あなたは、誰？』</span></p>
+        <p class="movie-span"><span>女子高生・すず　が　ベル　に</span></p>
+        <p class="movie-span"><span>ベル　が　女子高生・すず　に</span> </p>
+        <p class="movie-span"><span>『あなたは、誰？』</span></p>
         <p>そう問いかけている解釈もあると私は考えています。</p>
         <p>歌うことができない現実世界の女子高生・すずと歌うことのできるもう１つの世界のベルは同じ人物でありながら大きな乖離があるわけです。</p>
         <p>だからこそ、ベルはすずに　すずはベルに</p>
-        <p><span>『あなたは、誰？』</span></p>
+        <p class="movie-span"><span>『あなたは、誰？』</span></p>
         <p>そう問いかけているのではないかと解釈いたしました。</p>
         <p>もちろん１つの答えがあるものだとは考えていないので、１考察として考えていただけると幸いです。</p>
         <h4>超巨大インターネット空間の仮想世界＜Ｕ＞</h4>
@@ -105,15 +108,17 @@
 
 </body>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
+
 </style>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
   #wrapper {
     background-color: #FFF;
   }
 
   .entry-content h4,
   p {
+display: none;
     color: #00a897;
   }
 
@@ -183,7 +188,7 @@
       -1px 0 0 #ECE038, 1px 0 0 #ECE038;
   }
 
-  .movies-select {
+  .entry-content .movies-select {
     display: flex;
     justify-content: center;
   }
@@ -197,19 +202,18 @@
     flex-direction: column;
     align-items: center;
     border: #00a897 1px solid;
-    
     width: 100px;
   }
 
-  .movies-select p {
+  .entry-content .movies-select p {
     margin: 0;
   }
 
-  .active {
+  .entry-content .active {
     background: #00a897;
   }
 
-  .active p {
+  .entry-content .active p {
     color: #FFF;
   }
 
@@ -226,22 +230,22 @@
     background: #00a897;
   }
 
-  .official-anchor p {
+  .entry-content .official-anchor p {
     text-align: center;
     color: #FFF;
   }
 
-  .official-anchor:hover {
+  .entry-content .official-anchor:hover {
     opacity: 0.7;
     color: white;
   }
 
-  .content h4 {
+  .entry-content .content h4 {
     margin-top: 80px;
     padding: 0.8rem 1.5rem;
     border-left: 6px double #00a897;
   }
-  .content p span {
+  .entry-content .movie-span {
     font-size: 1.8em;
     color: #FFF;
     text-shadow: 1px 1px 0 #00a897, -1px -1px 0 #00a897,
@@ -249,7 +253,7 @@
       0px 1px 0 #00a897, 0 -1px 0 #00a897,
       -1px 0 0 #00a897, 1px 0 0 #00a897;
   }
-  .u{
+  .entry-content .u{
     margin: 0 auto;
     display: flex;
     justify-content: center;
