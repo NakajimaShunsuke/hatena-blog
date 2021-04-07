@@ -30,16 +30,91 @@
                 <p class="movie-phrase">あなたは、誰<br>？</p>
             </div>
         </div>
-        <div style="text-align: center;">
+        <div style="text-align: center; margin-bottom: 50px;">
             <p class="sub-title1">『時をかける少女』『サマーウォーズ』『おおかみこどもの雨と雪』</p>
             <p class="sub-title2">
                 細田守が辿り着いた、渾身の最新作</p>
-            <p class="movie-roadshow-sp">2021 ROADSHOW</p>
+            <p class="mainvisual-sp movie-roadshow-sp">2021 ROADSHOW</p>
+        </div>
+
+        <div class="panel" style="text-align: center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hM8T-6OvWpo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="panel" style="text-align: center; display: none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R1eM80jqTeM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="panel" style="text-align: center; display: none">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nBgL2Ei7Nv0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="movies-select">
+            <div class="btn active">
+                <p>予告１</p>
+            </div>
+            <div class="btn">
+                <p>特報</p>
+            </div>
+            <div class="btn">
+                <p>特報２</p>
+            </div>
+        </div>
+
+        <div>
+            <p>
+                <a class="official-anchor" href="https://ryu-to-sobakasu-no-hime.jp/">
+                    公式でストーリーを確認
+                </a>
+            </p>
+        </div>
+
+        <div class="content1" style="flex-direction: column; overflow: hidden;">
+            <div class="slideContsR slideConts">
+                <h4>物語の解釈</h4>
+            </div>
+            <div class="slideContsR slideConts">
+                <p class="movie-span">現実の自分　現実の世界</p>
+                <p class="movie-span">もう１つの自分　もう１つの世界</p>
+                <p>”現実の世界”のすずは母の死をきっかけに”うた”うことができないが、<br>
+                    ”もう１つの世界”では”ベル”として”うた”うことができる。</p>
+            </div>
+            <div class="slideContsR slideConts">
+                <p>公開されている情報の中でも特に強調されている</p>
+                <p class="movie-span2">あなたは、誰？</p>
+                <p>”ベル”が”竜”に対して <span class="movie-span2"> あなたは、誰？ </span> と問いかける事が一番自然かもしれません。</p>
+            </div>
+            <div class="slideContsR slideConts">
+                <p class="movie-span">”現実の自分”と<br>”もう１つの世界の自分”</p>
+                <p>”あなた”はある特定の人物をしてしているわけではなく、場面によってそこに入る人物が変化するとしたら？</p>
+                <p>”すず”と”ベル”の人格が別だとしたら</p>
+                <p> <span class="movie-span2"> あなたは、誰？ </span> と</p>
+                <p class="movie-span">”すず”が”ベル”に</p>
+                <p class="movie-span">”ベル”が”すず”に</p>
+                <p>問いかけている可能性が生まれます</p>
+            </div>
+            <div class="slideContsR slideConts">
+                <p class="movie-span" style="font-size: 1rem;">50億人の中から、たった一人を探し出せ</p>
+                <p>これは”すず”がもう一人の自分”ベル”を探しだせというメッセージなのかもしれません</p>
+            </div>
+
+            <h4 class="atogaki">あとがき</h4>
+            <p>もちろん１つの答えがあるものだとは考えていないので、１考察及び解釈だと考えていただけると幸いです。</p>
+            <p>公式サイトで開示されている情報から色々妄想するまでには”2021年の夏”は自分にとってめちゃくちゃホットです。</p>
+            <p>映画は限られた時間で作品を最大限楽しんでもらわないといけない為、行間を読む必要がある部分もあるのは確かです。</p>
+            <p>だからこそ開示された情報頼りに妄想を繰り返し初回上映を観たとき最大限の感動を得る努力は私をしていこうと思います。</p>
         </div>
     </div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 
     .entry-title .entry-title-empty {
         color: #00a897;
@@ -127,6 +202,94 @@
         display: none;
     }
 
+    .entry-content .movies-select {
+        display: flex;
+        justify-content: center;
+    }
+
+    .movies-select div {
+        cursor: pointer;
+        margin: 10px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: #00a897 1px solid;
+        width: 100px;
+    }
+
+    .entry-content .movies-select p {
+        margin: 0;
+    }
+
+    .entry-content .active {
+        background: #00a897;
+    }
+
+    .entry-content .active p {
+        color: #FFF;
+    }
+
+    .entry-content .official-anchor {
+        margin: 20px auto;
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        width: 70%;
+        height: 40px;
+        background: #00a897;
+        color: #FFF;
+    }
+
+    .entry-content .official-anchor a {
+        text-align: center;
+        color: #FFF;
+    }
+
+    .entry-content .official-anchor:hover {
+        opacity: 0.7;
+        color: white;
+    }
+
+    .entry-content .content1 h4,
+    .entry-content .content1 p {
+        font-family: 'Sawarabi Mincho', sans-serif;
+    }
+
+    .entry-content .content1 h4 {
+        font-size: 1.7em;
+    }
+
+    .entry-content .content1 .atogaki {
+        margin-top: 80px;
+        padding: 0.8rem 1.5rem;
+        border-left: 6px double #00a897;
+    }
+
+
+    .entry-content .content1 .movie-span {
+        color: #FFF;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 0 #00a897, -1px -1px 0 #00a897,
+            -1px 1px 0 #00a897, 1px -1px 0 #00a897,
+            0px 1px 0 #00a897, 0 -1px 0 #00a897,
+            -1px 0 0 #00a897, 1px 0 0 #00a897;
+    }
+
+    .entry-content .content1 .movie-span2 {
+        color: #00a897;
+        font-size: 1.5rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        text-shadow: 1px 1px 0 #ECE038, -1px -1px 0 #ECE038,
+            -1px 1px 0 #ECE038, 1px -1px 0 #ECE038,
+            0px 1px 0 #ECE038, 0 -1px 0 #ECE038,
+            -1px 0 0 #ECE038, 1px 0 0 #ECE038;
+    }
+
     @media screen and (max-width: 750px) {
         #touch-entry-header-ad {
             height: 0;
@@ -196,5 +359,7 @@
         $('.movie-phrase').hide().fadeIn(2500);
     });
 </script>
+<script src="../jQuery.js"></script>
+<script src="../common.js"></script>
 
 </html>
