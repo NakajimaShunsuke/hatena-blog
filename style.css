@@ -1,0 +1,30 @@
+.entry-content {
+    width: 730px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 750px) {
+    .entry-content{
+        width: 100%;
+    }
+}
+
+/* スライドアニメーション */
+.slideConts {
+    transition: 0.8s;
+}
+
+.slideContsL {
+    transform: translate(-800px, 0);
+}
+
+.slideContsR {
+    transform: translate(800px, 0);
+}
+
+.slideContsL.show {
+    transform: translate(0, 0) !important;
+}
+
+.slideContsR.show {
+    transform: translate(0, 0) !important;
+}
