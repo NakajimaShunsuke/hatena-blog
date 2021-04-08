@@ -19,4 +19,22 @@
   margin: 0;
   padding: 0;
 }
+
+.ityped-cursor {
+  font-size: 1em;
+  opacity: 1;
+  color: black;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=new-life-progress.css.map */

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../components/css/slide.css">
     <title>竜とそばかすの姫</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -358,8 +359,16 @@
         $('.mv-character,.movie-title,.movie-roadshow').hide().fadeIn(1500);
         $('.movie-phrase').hide().fadeIn(2500);
     });
+
+    //  ボタンが押された時の切り替え処理
+    $('.btn').click(function () {
+        $('.btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.panel').hide().fadeToggle;
+        $('.panel').eq($(this).index()).fadeIn();
+    });
 </script>
-<script src="../jQuery.js"></script>
-<script src="../common.js"></script>
+<script src="../components/js/slide.js"></script>
 
 </html>
