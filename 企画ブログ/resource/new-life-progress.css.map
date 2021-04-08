@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,AAAA,QAAQ,CAAC;EACP,UAAU,EAAE,OAAO;CACpB;;AACD,AAAA,WAAW,CAAA;EACT,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,kBAAkB;EAAC,QAAQ;CACtC;;AACD,AAAA,KAAK,CAAC,CAAC,CAAC;EACJ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "new-life-progress.scss"
+    ],
+    "names": [],
+    "file": "new-life-progress.css"
+}
