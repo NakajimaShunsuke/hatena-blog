@@ -8,6 +8,10 @@
     }
 }
 
+#wrapper {
+    background-color: #2d2d2d;;
+}
+
 /* スライドアニメーション */
 .slideConts {
     transition: 0.8s;
