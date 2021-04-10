@@ -1,41 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+
 #wrapper {
-  background: #f8faf7;
-}
-.mainvisual{
-  width: 100%;
+	background: #f8faf7;
 }
 
-.box6 {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background: #f0f7ff;
-    border: dashed 2px #5b8bd0;/*点線*/
-}
-.box6 p {
-    margin: 0;
-    padding: 0;
-}
+.entry-content {
+	h4,
+	h5,
+	p,
+	a {
+		color: #79520b;
+		font-family: "Sawarabi Mincho", sans-serif;
+	}
 
-.ityped-cursor {
-  font-size: 1em;
-  opacity: 1;
-  color: black;
+	h4 {
+		font-size: 1.5rem;
+		border-bottom: #79520b solid 0.1rem;
+		width: max-content;
+	}
+
+	h5 {
+		font-size: 1rem;
+	}
+
+	.ploom-img {
+		text-align: center;
+		img {
+			width: 80%;
+		}
+	}
+
+	.mainvisual {
+		width: 100%;
+	}
+
+	table {
+		width: 100%;
+		border-spacing: 0;
+	}
+
+	table th {
+		background-color: none;
+		width: 20%;
+		color: #79520b;
+		border-bottom: solid 2px #79520b;
+		padding: 10px 0;
+	}
+
+	table td {
+		color: #79520b;
+		border-bottom: solid 2px #ddd;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.inyou {
+		cursor: pointer;
+		text-align: center;
+	}
+
+	ul.list {
+		color: #79520b;
+		position: relative;
+		padding: 0.5em;
+		border: solid 1px #79520b;
+		list-style-type: none;
+	}
+	ul.list li {
+		padding: 0.5em 0 0.5em 1.4em;
+		line-height: 1.5;
+		border-bottom: 1px dashed #79520b;
+	}
+	ul.list li::before {
+		position: absolute;
+		content: "ul.list {
+  position: relative;
+  padding: 0.5em;
+  border: solid 1px #79520b;
+  list-style-type: none;
+  }
+  ul.list li {
+  padding: 0.5em 0 0.5em 1.4em;
+  line-height: 1.5;
+  border-bottom: 1px dashed #79520b;
+  }
+  ul.list li::before {
+  position: absolute;
+  content: "
+			\002713
+			";
+  color: #79520b;
+  font-weight: bold;
+  left : 0.5em;
+  }
+  ul.list li:last-of-type {
+  border-bottom: none;
+  }
+  2713";
+		color: #79520b;
+		font-weight: bold;
+		left: 0.5em;
+	}
+	ul.list li:last-of-type {
+		border-bottom: none;
+	}
+
+	.official-anchor a {
+		text-align: center;
+		color: #fff;
+	}
+
+	.official-anchor:hover {
+		opacity: 0.7;
+	}
+
+	.official-anchor {
+		margin: 20px auto;
+		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		width: 70%;
+		height: 40px;
+		background: #79520b;
+		color: #fff;
+	}
 }
 
 @keyframes blink {
-  100% {
-    opacity: 0;
-  }
+	100% {
+		opacity: 0;
+	}
 }
 
 @-webkit-keyframes blink {
-  100% {
-    opacity: 0;
-  }
+	100% {
+		opacity: 0;
+	}
 }
 
 @-moz-keyframes blink {
-  100% {
-    opacity: 0;
-  }
+	100% {
+		opacity: 0;
+	}
 }

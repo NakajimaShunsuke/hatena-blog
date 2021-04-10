@@ -1,12 +1,16 @@
+body {
+	font-size: 10px;
+}
+
 .entry-content {
-    width: 730px;
-    margin: 0 auto;
+	width: 730px;
+	margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
-    .entry-content{
-        width: 100%;
-    }
+	.entry-content {
+		width: 100%;
+	}
 }
 #wrapper {
-    background-color: #2d2d2d;;
+	background-color: #2d2d2d;
 }
