@@ -1,16 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=New+Tegomin&display=swap");
+
+html {
+	/* ルートのフォントサイズを10pxに設定しておく */
+	font-size: 62.5%;
+	font-family: "Anton", sans-serif;
+	font-family: "New Tegomin", serif;
+}
+
 body {
-	font-size: 10px;
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+h4 {
+	/* 31px */
+	font-size: 3.1rem;
+}
+
+h5 {
+	/* 24px */
+	font-size: 2.4rem;
+}
+
+body {
+	background-image: url(https://cdn.blog.st-hatena.com/images/theme/backgrounds/2014/pattern-08.jpg?version=d141c42…&env=production);
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0 0;
+}
+
+.content {
+	margin: 0 auto;
+	width: 930px;
 }
 
 .entry-content {
 	width: 730px;
 	margin: 0 auto;
 }
+
 @media screen and (max-width: 750px) {
+	.content {
+		overflow: hidden;
+		width: 100%;
+	}
 	.entry-content {
 		width: 100%;
 	}
-}
-#wrapper {
-	background-color: #2d2d2d;
 }
