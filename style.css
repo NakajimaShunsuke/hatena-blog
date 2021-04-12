@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=New+Tegomin&display=swap");
+
 html {
 	/* ルートのフォントサイズを10pxに設定しておく */
 	font-size: 62.5%;
+	font-family: "Anton", sans-serif;
+	font-family: "New Tegomin", serif;
 }
 
 body {
 	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
-	font-size: 1.8em;
+	font-size: 1.3rem;
+	margin: 0;
 }
 
 h4 {
@@ -26,6 +31,7 @@ body {
 }
 
 .content {
+	margin: 0 auto;
 	width: 930px;
 }
 
@@ -33,8 +39,10 @@ body {
 	width: 730px;
 	margin: 0 auto;
 }
+
 @media screen and (max-width: 750px) {
 	.content {
+		overflow: hidden;
 		width: 100%;
 	}
 	.entry-content {
