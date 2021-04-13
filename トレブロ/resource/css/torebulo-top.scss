@@ -7,10 +7,12 @@
 	font-family: "Stick", sans-serif;
 	overflow: hidden;
 	h4 {
+		font-family: "Stick", sans-serif;
 		font-size: 3.1rem;
 		color: #3f4551;
 	}
 	p {
+		font-family: "Stick", sans-serif;
 		border-bottom: solid 1px #dcdddd;
 	}
 
@@ -20,13 +22,13 @@
 		justify-content: center;
 		align-items: center;
 		border: solid 1px gray;
-		width: 720px;
+		width: 95%;
 		height: 300px;
 
 		.main-title {
 			width: fit-content;
 			margin: 0;
-			font-size: 10rem;
+			font-size: 8rem;
 		}
 	}
 
@@ -77,6 +79,11 @@
 			border-bottom: solid 2px #dcdddd;
 			text-align: center;
 			padding: 10px 0;
+		}
+	}
+	@media screen and (max-width: 750px) {
+		.main-title {
+			font-size: 7rem;
 		}
 	}
 }
