@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=New+Tegomin&display=swap");
+
+.content {
+	background: #ece5de;
+}
+
+.entry-content {
+	color: #8c4c00;
+	h4 {
+		font-family: "New Tegomin", serif;
+		font-size: 3.1rem;
+		color: #8c4c00;
+	}
+
+	p {
+		font-family: "New Tegomin", serif;
+		color: #8c4c00;
+	}
+
+	dl {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		border-spacing: 0;
+	}
+
+	dl dt {
+		width: 30%;
+		color: #8c4c00;
+		border-bottom: solid 2px #8c4c00;
+		padding: 10px 0;
+	}
+
+	dl dd {
+		margin: 0;
+		width: 70%;
+		border-bottom: solid 2px #ddd;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.official-anchor {
+		margin: 20px auto;
+		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		width: 70%;
+		height: 40px;
+		background: #8c4c00;
+		color: #fff;
+	}
+
+	.official-anchor a {
+		text-align: center;
+		color: #fff;
+	}
+
+	.official-anchor:hover {
+		opacity: 0.7;
+		color: white;
+	}
+}
