@@ -1,0 +1,88 @@
+.content {
+	margin: 0 auto;
+	width: 930px;
+}
+
+.entry-content {
+	width: 730px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+	.content {
+		overflow: hidden;
+		width: 100%;
+	}
+	.entry-content {
+		width: 100%;
+	}
+}
+
+html {
+	/* ルートのフォントサイズを10pxに設定しておく */
+	font-size: 62.5%;
+	font-family: "Anton", sans-serif;
+	font-family: "New Tegomin", serif;
+}
+
+body {
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	background-color: #222;
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+.entry-content {
+	.plate {
+		width: 410px;
+		margin: 10% auto;
+	}
+	.shadow {
+		color: #fff;
+		font-family: Arvo;
+		font-weight: bold;
+		text-shadow: -3px -3px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222,
+			3px 3px 0 #222, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff,
+			7px 7px 0 #fff;
+		line-height: 0.8em;
+		letter-spacing: 0.1em;
+		transform: scaleY(0.7);
+		-webkit-transform: scaleY(0.7);
+		-moz-transform: scaleY(0.7);
+		margin: 0;
+		text-align: center;
+	}
+	.script {
+		font-family: "Seaweed Script";
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+		position: relative;
+		margin: 0;
+	}
+	.script span {
+		background-color: #222;
+		padding: 0 0.3em;
+	}
+	.script:before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		width: 100%;
+		border-bottom: 3px solid #fff;
+	}
+	.text1 {
+		font-size: 60px;
+	}
+	.text2 {
+		font-size: 169px;
+	}
+	.text3 {
+		font-size: 100px;
+	}
+}
