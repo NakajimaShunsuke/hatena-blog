@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+
+.content {
+	background: url("https://cdn.blog.st-hatena.com/images/theme/backgrounds/2014/pixel-01@2x.png?version=b0f69bbd0bdeff995d71c167fc8b252679abb18e&env=production");
+}
+.entry-content {
+	h4,
+	p {
+		font-family: "Sawarabi Mincho", sans-serif;
+	}
+	h4 {
+		font-size: 3.1rem;
+		border-bottom: #3f4551 solid 1px;
+	}
+	img {
+		width: 100%;
+	}
+	#currentrank {
+		.currentrank-batch {
+			img {
+				width: 30%;
+			}
+			text-align: center;
+		}
+	}
+
+	.official-anchor {
+		margin: 20px auto;
+		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		width: 70%;
+		height: 40px;
+		background: #3f4551;
+		color: #fff;
+	}
+
+	.official-anchor a {
+		text-align: center;
+		color: #fff;
+	}
+
+	.official-anchor:hover {
+		opacity: 0.7;
+		color: white;
+	}
+
+	dl {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		border-spacing: 0;
+	}
+
+	dl dt {
+		width: 30%;
+		color: #3f4551;
+		border-bottom: solid 2px #3f4551;
+		padding: 10px 0;
+	}
+
+	dl dd {
+		margin: 0;
+		width: 70%;
+		border-bottom: solid 2px gray;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	#role {
+		.mainchamp {
+			margin-top: 20px;
+			text-align: center;
+			img {
+				width: 80%;
+			}
+		}
+	}
+
+	#reason {
+		p span {
+			font-size: 2.5rem;
+		}
+	}
+
+	.img-div {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+
+	ul {
+		padding: 0;
+		width: 70%;
+		list-style: none;
+	}
+	ul li {
+		position: relative;
+		padding: 7px 5px 7px 10px;
+		margin-bottom: 5px;
+		border: solid 1px #3f4551;
+		border-left: solid 5px #3f4551;
+		color: #3f4551;
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+}
