@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 .content {
+  background: #222;
+  position: relative;
+  z-index: -2;
   margin: 0 auto;
   width: 930px;
 }
@@ -35,8 +39,31 @@ body {
   margin: 0;
 }
 
+.entry-content h4 {
+  color: #fff;
+  font-size: 3.1rem;
+}
+
+.entry-content h4::before {
+  content: "";
+  width: 5rem;
+  /*画像の幅*/
+  height: 5rem;
+  /*画像の高さ*/
+  display: inline-block;
+  background: url("../images/175463_negate.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.entry-content h4,
+.entry-content p {
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .entry-content .plate {
-  width: 410px;
+  width: 100%;
   margin: 10% auto;
 }
 
@@ -79,6 +106,7 @@ body {
 }
 
 .entry-content .text1 {
+  margin-top: 20px;
   font-size: 60px;
 }
 
@@ -87,6 +115,19 @@ body {
 }
 
 .entry-content .text3 {
+  margin-bottom: 20px;
   font-size: 100px;
+}
+
+@media screen and (max-width: 750px) {
+  .entry-content .text1 {
+    font-size: 40px;
+  }
+  .entry-content .text2 {
+    font-size: 100px;
+  }
+  .entry-content .text3 {
+    font-size: 60px;
+  }
 }
 /*# sourceMappingURL=world-yokosawa.css.map */
