@@ -92,6 +92,13 @@
   height: 100% !important;
 }
 
+.entry-content #nomirepo div {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: dashed 2px #8c4c00;
+  /*点線*/
+}
+
 .entry-content .mainvisual img {
   width: 730px;
 }
