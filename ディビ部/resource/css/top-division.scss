@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+html {
+	/* ルートのフォントサイズを10pxに設定しておく */
+	font-size: 62.5%;
+}
+
+body {
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+h4 {
+	/* 31px */
+	font-size: 3.1rem;
+	font-weight: bold;
+}
+
+h5 {
+	/* 24px */
+	font-size: 2.4rem;
+}
+
+.content {
+	background: #383838;
+}
+
+.entry-content {
+	h4,
+	p {
+		font-family: "Oswald", sans-serif;
+	}
+	p {
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	h4 {
+		color: #ff9300;
+		font-size: 3.1rem;
+	}
+	img {
+		width: 100%;
+	}
+
+	span {
+		color: #ff9300;
+	}
+
+	#overview {
+		margin-top: 50px;
+		text-align: center;
+		h4 {
+			color: #fff;
+			font-weight: bold;
+			font-size: 2.4rem;
+		}
+	}
+
+	.frame {
+		position: relative;
+		padding: 0.25em 1em;
+	}
+
+	.frame:before,
+	.frame:after {
+		content: "";
+		width: 20px;
+		height: 30px;
+		position: absolute;
+		display: inline-block;
+	}
+
+	.frame:before {
+		border-left: solid 1px #ff9300;
+		border-top: solid 1px #ff9300;
+		top: 0;
+		left: 0;
+	}
+
+	.frame:after {
+		border-right: solid 1px #ff9300;
+		border-bottom: solid 1px #ff9300;
+		bottom: 0;
+		right: 0;
+	}
+
+	.frame p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.skew {
+		animation: skew 3s infinite;
+	}
+
+	@keyframes skew {
+		0% {
+			transform: none;
+		}
+
+		33% {
+			transform: none;
+		}
+
+		33.3% {
+			transform: skewX(30deg);
+		}
+
+		33.6% {
+			transform: skewX(-30deg);
+		}
+
+		33.9% {
+			transform: none;
+		}
+
+		66% {
+			transform: none;
+		}
+
+		66.3% {
+			transform: skewX(5deg);
+		}
+
+		66.6% {
+			transform: skewX(-5deg);
+		}
+
+		66.9% {
+			transform: none;
+		}
+
+		77% {
+			transform: none;
+		}
+
+		77.3% {
+			transform: skewX(15deg);
+		}
+
+		77.6% {
+			transform: skewX(-15deg);
+		}
+
+		77.9% {
+			transform: none;
+		}
+	}
+
+	/* スライドアニメーション */
+	.slideConts {
+		transition: 0.8s;
+	}
+
+	.slideContsL {
+		transform: translate(-800px, 0);
+	}
+
+	.slideContsR {
+		transform: translate(800px, 0);
+	}
+
+	.slideContsL.show {
+		transform: translate(0, 0) !important;
+	}
+
+	.slideContsR.show {
+		transform: translate(0, 0) !important;
+	}
+}
